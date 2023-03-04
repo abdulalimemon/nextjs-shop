@@ -14,14 +14,14 @@ const CartSidebar = () => {
                 <>
                 </>
             ) : (
-                <BsFillCartCheckFill onClick={() => setShowSidebar(!showSidebar)} className='w-6 h-6  text-black'></BsFillCartCheckFill>
+                <BsFillCartCheckFill onClick={() => setShowSidebar(!showSidebar)} className='w-6 h-6 text-red-500'></BsFillCartCheckFill>
             )}
             <div className={`top-0 right-0 w-10/12 lg:w-4/12  px-5 py-8 bg-gray-900 text-white fixed h-[100vh] z-50  ease-in-out duration-300 ${showSidebar ? "translate-x-0 " : "translate-x-full"
                 }`} >
                 {showSidebar ? (
                     <div className='flex justify-between items-center'>
                         <h2 className="text-2xl text-white fixed z-50 flex items-center justify-center">
-                            <BsFillCartCheckFill className='w-7 h-7 border-0 mr-4'></BsFillCartCheckFill>
+                            <BsFillCartCheckFill className='w-7 h-7 border-0 mr-4 text-red-500'></BsFillCartCheckFill>
                             Next shop cart
                         </h2>
                         <button
@@ -40,7 +40,7 @@ const CartSidebar = () => {
                         <ul className="flex flex-col divide-y divide-gray-700">
                             <li className="flex flex-col py-3 sm:flex-row sm:justify-between">
                                 <div className="flex w-full space-x-2 sm:space-x-4">
-                                    <img className="flex-shrink-0 object-cover w-28 dark:border-transparent rounded outline-none dark:bg-gray-500" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="Polaroid camera" />
+                                    <img className="flex-shrink-0 object-cover w-14 h-14 lg:w-28 lg:h-28 dark:border-transparent rounded outline-none dark:bg-gray-500" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="Polaroid camera" />
                                     <div className="flex flex-col justify-between w-full pb-4">
                                         <div className="flex justify-between w-full pb-2 space-x-2">
                                             <div className="space-y-1">
